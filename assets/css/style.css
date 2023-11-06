@@ -133,3 +133,48 @@ header .navegation ul li a:hover{
     flex-wrap: wrap;
     gap: 200px;
 }
+
+@media screen and (max-width: 600px) {
+    header .navegation, header .modeDark{
+        display: none;
+    }
+    header{
+        display: flex;
+        justify-content: center;
+    }
+
+    .container{
+        margin-top: 50px;
+        display: block;
+    }
+
+    .card .iconMoeda img{
+        width: 38px;
+        margin-right: 5px;
+    }
+    .card .information{
+        margin-left: 5px;
+        gap: 10px;
+        font-size: 8px;
+    }
+
+    .arrowDown{
+        font-size: 10px;
+    }
+
+    .container .leftMain h1{
+        font-size: 60px;
+    }
+    .container .leftMain p{
+        font-size: 12px;
+    }
+    .container .leftMain button{
+        width: 180px;
+    }
+    .container .rightMain{
+        text-align: center;
+    }
+    .container .rightMain img{
+        width: 200px;
+    }
+}
