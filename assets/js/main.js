@@ -4,7 +4,6 @@ var sectionCripto = document.querySelector('.criptoInfor');
 const connectionApi = async () => {
     try{
         fetch(url).then(res => res.json()).then(infor => {
-            console.log(infor)
                         sectionCripto.innerHTML = 
             `
             <section class="card">
