@@ -1,0 +1,135 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+:root{
+    --padding-main: 15px 70px;
+    --background-main: rgb(19, 19, 19);
+    --color-main: blueviolet;
+    --alternative-font: 'Pixelify Sans', sans-serif;
+}
+
+body{
+    background-color: var(--background-main);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    padding: var(--padding-main);
+}
+
+.logo h1, .logo a{
+    color: white;
+    text-decoration: none;
+}
+.logo h1 > span{
+    color: var(--color-main);
+}
+
+.active{
+    display: block !important;
+}
+
+.modeDark i {
+    display: none;
+    font-size: 30px;
+}
+
+header .navegation ul{
+    display: flex;
+}
+
+header .navegation ul li{
+    list-style: none;
+}
+
+header .navegation ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 19px;
+    margin: 0 20px;
+}
+
+header .navegation ul li a:hover{
+    color: var(--color-main);
+}
+/* HEADER END */
+
+.container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: var(--padding-main);
+}
+
+.container .leftMain{
+    text-align: center;
+}
+.container .leftMain h1{
+    font-family: var(--alternative-font);
+    font-size: 70px;
+    transition: 1s;
+    animation: animH1 1.5s ease-in-out infinite;
+}
+@keyframes animH1 {
+    0%{
+        color: white;
+    }100%{
+        color: var(--color-main);
+    }
+}
+.container .leftMain p{
+    margin-top: 10px;
+}
+.container .rightMain img{
+    width: 400px;
+}
+.leftMain button{
+    margin-top: 20px;
+    width: 370px;
+    height: 30px;
+    cursor: pointer;
+    background: var(--color-main);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+.leftMain button:hover{
+    background: rebeccapurple;
+}
+
+.arrowDown{
+    margin-top: 60px;
+    margin-bottom: 30px;
+    text-align: center;
+    font-size: 30px;
+}
+
+.card{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(137, 43, 226, 0.1);
+    backdrop-filter: blur(10px);
+    align-items: center;
+    padding: var(--padding-main);
+    border: 0.2px blueviolet solid;
+}
+.card .iconMoeda img{
+    width: 80px;
+}
+
+.card .information{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 200px;
+}
